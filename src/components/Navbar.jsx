@@ -1,29 +1,73 @@
-import '../css/Navbar.css'
-import '../javascript/Navbar'
-const Navbar = () => {
+import { useState } from "react";
+import { NavLink } from "react-router-dom";
+import "../css/Navbar.css";
+
+function NavBar() {
+  const [click, setClick] = useState(false);
+
+  const handleClick = () => setClick(!click);
   return (
-    <div>
-         <header className="header">
-        <img src="images/logo.png" alt="Logo" className="logo" />
-        <nav className="navbar">
-            <ul className="navbar-list">
-                <li><a href="#" className="navbar-link">Home</a></li>
-                <li><a href="#" className="navbar-link">About</a></li>
-                <li><a href="#" className="navbar-link">Services</a></li>
-                <li><a href="#" className="navbar-link">Gallary</a></li>
-                <li><a href="#" className="navbar-link">Contact</a></li>
-            </ul>
+    <>
+      <nav className="navbar">
+        <div className="nav-container">
+          <NavLink exact to="/" className="nav-logo">
+            TheWonderBeats
+            {/* <i className="fas fa-code"></i> */}
+          </NavLink>
 
-        </nav>
-
-        <div className="mobile-navbar-btn" id='mobile-navbar-btn'>
-            <ion-icon name="menu-outline" className="mobile-nav-icon" ></ion-icon>
-            <ion-icon name="close-outline" className="mobile-nav-icon"></ion-icon>
+          <ul className={click ? "nav-menu active" : "nav-menu"}>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                Home
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/about"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                About
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/gallery"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                Gallery
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/contact"
+                activeClassName="active"
+                className="nav-links nav-contact"
+                onClick={handleClick}
+              >
+                Contact Us
+              </NavLink>
+            </li>
+          </ul>
+          <div className="nav-icon" onClick={handleClick}>
+            <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
+          </div>
         </div>
-
-    </header>
-    </div>
-  )
+      </nav>
+    </>
+  );
 }
 
-export default Navbar
+export default NavBar;

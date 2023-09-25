@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+    --padding-inline-section: 20px;
+        --heading: rgb(0 10 45);
+        --para: #777;
+        --para-tint: #e4e4e4;
+        --white: #fff;
+        --black: #212529;
+        --helper: #8490ff;
+        --overlay: #3e64ff;
+        --helper-tint: #f3f4ff;
+        --bg: rgb(249 249 255);
+        --icons-bg: rgba(144, 172, 209, 0.2);
+        --gradient: linear-gradient(0deg, rgb(132 144 255) 0%, rgb(98 189 252) 100%);
+        --gradientSupport: -webkit-linear-gradient(
+          0deg,
+          rgb(132 144 255) 0%,
+          rgb(98 189 252) 100%
+        );
+        --shadow: 0px 0px 20px 0px rgb(132 144 255 / 20%);
+        --shadowSupport: 0px 20px 20px 0px rgb(132 144 255 / 30%);
+      }
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-text-color);
+}
+
+
+
+.header-right img {
+    width: 90%;
+}
+
+.container {
+    /* max-width: 100%; */
+    max-width: 100%;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+    overflow: hidden;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+header {
+    padding: 50px var(--padding-inline-section) 0;
+
+}
+
+header-section {
+    gap: 50px;
+    justify-content: center;
+}
+
+
+.header-left {
+    max-width: 50vw;
+    padding: 1rem 4rem;
+}
+
+.header-left h1 {
+    margin-top: 2rem;
+    margin-bottom: 2%;
+
+}
+
+.primary-button {
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    font-weight: 500;
+    color: white !important;
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.2s ease-out;
+    text-align: center;
+}
+
+.primary-button:hover {
+    background-color: var(--accent-color-dark);
+}
+.get-started-btn {
+    margin-top: 20rem;
+}
+
+.about_para{
+    margin-bottom: 4%;
+}
+
+     /* our principles section starts here */
+
+.big-feature-section {
+    padding: 30px var(--padding-inline-section) 0;
+    /* margin-top: 5%; */
+
+}
+
+.second-feature{
+    flex-direction: row-reverse;
+}
+
+.big-feature-container {
+    gap: 30px;
+    margin-top: 5%;
+}
+
+.feature-img img {
+    width: 100%;
+    background-image: url('./assets/asset\ 34.svg');
+    background-repeat: no-repeat;
+}
+.imgwidth{
+    width: 70%;
+    background-image: url('./assets/asset\ 34.svg');
+    background-repeat: no-repeat;
+}
+
+.para1 {
+    margin-top: 2%;
+}
+
+.feature-desc {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+.features-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+.custom-feature{
+    margin-top: -4%;
+    margin-bottom: 10%;
+}
