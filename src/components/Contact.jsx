@@ -1,8 +1,9 @@
 import '../css/ContactComponent.css'
 import Footer from './Footer'
-
+ 
 
 const Contact = () => {
+
   return (
     <>
     <div className='wrapper'>
@@ -29,25 +30,25 @@ const Contact = () => {
         </div>
       </div>
       <div className="right-side">
-        {/* <div className="topic-text">Send us a message</div>
-        <p>If you have any type of queries, you can send message through email. </p> */}
+        <div className="topic-text">Send us a message</div>
+        <p>If you have any type of queries, you can send message through email. </p>
 
 
-      <form action="#" method="POST" id="myform">
+      <form action="https://formspree.io/f/xnqkgkro" method="POST" id="myform">
         <div className="input-box">
-          <input type="text" name="name" placeholder="Enter your name"/>
+          <input type="text" name='name'  placeholder="Enter your name"/>
         </div>
         <div className="input-box">
-          <input type="text" name="email" placeholder="Enter your email" />
+          <input type="text" name='email'   placeholder="Enter your email" />
         </div>
         <div className="input-box">
-          <input type="number" name="phone" placeholder="Enter your Phone number" />
+          <input type="number"  name='phone' placeholder="Enter your Phone number" />
         </div>
         <div className="input-box message-box">
-          <textarea name="msg-text" id="5" cols="30" rows="10" placeholder="Message"></textarea>
+          <textarea name='message' id="5" cols="30" rows="10" placeholder="Message"></textarea>
         </div> 
         <div className="button">
-          <a><input type="button" value="Send Now" /></a>
+          <a><input className="submitbutton"  type="submit" value="Send Now" /></a>
         </div>
       </form>
     </div>

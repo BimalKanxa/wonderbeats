@@ -7,7 +7,7 @@ const Contact = () => {
     <div className="form-container">
   <h2 className="reg-head">Get in Touch!</h2>
 
-  <form action="submit_form.php" method="post" encType="multipart/form-data">
+  <form action="https://formspree.io/f/xnqkgkro" method="POST" >
       <label htmlFor="name">Name:</label>
       <input type="text" id="name" name="name" required />
 

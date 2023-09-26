@@ -21,43 +21,43 @@
   export const seminars = [
     {
       id:1,
-      img:"https://gcdnb.pbrd.co/images/ury4ne5yfGM5.jpg?o=1",
+      img:'./event.jpeg',
       college: "cotton university"
     },
     {
       id:2,
-      img:"https://gcdnb.pbrd.co/images/ury4ne5yfGM5.jpg?o=1",
+      img:'./event.jpeg',
       college: "cotton university"
     },
     {
       id:3,
       
-      img: "https://gcdnb.pbrd.co/images/ury4ne5yfGM5.jpg?o=1",
+      img:'./event.jpeg',
       college: "cotton university"
     },
     {
       id:4,
-      img:"https://gcdnb.pbrd.co/images/ury4ne5yfGM5.jpg?o=1",
+      img:'./event.jpeg',
       college: "cotton university"
     },
     {
       id:5,
-      img:"https://gcdnb.pbrd.co/images/ury4ne5yfGM5.jpg?o=1",
+      img:'./event.jpeg',
       college: "cotton university"
     },
     {
       id:6,
-      img:"https://gcdnb.pbrd.co/images/ury4ne5yfGM5.jpg?o=1",
+      img:'./event.jpeg',
       college: "cotton university"
     },
     {
       id:7,
-      img:"https://gcdnb.pbrd.co/images/ury4ne5yfGM5.jpg?o=1",
+      img:'./event.jpeg',
       college: "cotton university"
     },
     {
       id:8,
-      img:"https://gcdnb.pbrd.co/images/ury4ne5yfGM5.jpg?o=1",
+      img:'./event.jpeg',
       college: "cotton university"
     },
   ]
