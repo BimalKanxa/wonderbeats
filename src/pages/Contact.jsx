@@ -36,7 +36,7 @@ const Contact = () => {
   
   <p style={{color: "red" }}id="warning"></p>
 </div>
-<h2 style={{color: "#06a3da", borderBottom: "2px solid #06a3da", width: "100%",marginTop: "5%" }}></h2>
+<h2 style={{color: "#06a3da", width: "100%",marginTop: "5%" }}></h2>
 
 </>
   );
