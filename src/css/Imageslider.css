@@ -2,6 +2,7 @@
 
 .card {
     width: 70%;
+    /* width: 100%; */
     margin: 0 auto;
     box-shadow: none !important;
   }
@@ -23,7 +24,7 @@
 @media screen and (max-width: 479px) {
  
       /* Media query for screens with a maximum width of 768px (tablets and smaller) */
-      @media (max-width: 768px) {
+     
         .card {
           width: 90%; /* Adjust card width for smaller screens */
         }
@@ -39,5 +40,7 @@
         .card-text {
           font-size: 14px; /* Adjust font size for smaller screens */
         }
+      .container4{
+        width: 100vw;
       }
 }

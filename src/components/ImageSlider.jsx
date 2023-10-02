@@ -27,9 +27,9 @@ const ImageSlider = () => {
   };
 
   return (
-    <Container>
+    <Container style={{width: "100%"}}>
       <Slider {...sliderSettings}>
-        <div>
+        <div className='sliderContainer'>
           <Card className='card' style={cardStyle}>
             <Card.Img className='cardImage' style={imageStyle} src="https://images.unsplash.com/photo-1554224155-380177dc24a5?ixid=M3wzOTE5Mjl8MHwxfHNlYXJjaHwxfHxvcHBvcnR1bml0aWVzJTJDJTIwZW1wb3dlcnxlbnwwfHx8fDE2OTA1NjI0MTl8MA&ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=370" alt="Image 1" />
             <Card.Body>
