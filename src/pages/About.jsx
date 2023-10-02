@@ -1,6 +1,7 @@
 import Footer from '../components/Footer';
 import '../css/About.css'
 import Contact from './Contact';
+import headerImage from '../images/WBlogo.png'
 
 export const About = () => {
   return (
@@ -10,11 +11,11 @@ export const About = () => {
     <div className="container header-section flex">
       <div className="header-left">
         <h1>About The Wonder Beats Foundation</h1>
-        <p className='about_para'>The Wonder Beats Foundation is a non-profit organization committed to empowering individuals to break free from poverty&apos;s cycle and reach their full potential. Through scholarships, mentorship, and skill development programs, we strive to create a level playing field in education and employment.</p>
+        <p className='about_para'>The Wonder Beats Foundation is a non-governmental organization committed to improving the lives of underprivileged students and unemployed youths. Founded on the principle of providing equal opportunities to all, the foundation focuses on creating sustainable programs that empower individuals to reach their full potential. <br /><br /> At the heart of the organization&apos;s mission is the belief that education is a key tool for breaking the cycle of poverty. The Wonder Beats Foundation works to provide access to quality education for disadvantaged students, regardless of their socioeconomic status. Through scholarships, mentorship, and educational programs, the foundation aims to create a level playing field for all students, irrespective of their background.</p>
         <a href="#" className="primary-button get-started-btn">Contact Us</a>
       </div>
       <div className="header-right">
-        <img src="https://imgs.search.brave.com/7ek16h5PYVhlNypnZV4RqtNKJl_YlJjPJZQveqSlKzQ/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNTEx/NjY1NTk1L3Bob3Rv/L3dvcmstb2NjdXBh/dGlvbnMuanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPVNTYlRQ/M2Q5YzFUTFNHTFVh/N0tZdUVwNDdmZHZI/cmx2OERFa3JoTDd5/UzA9" alt="banner image" />
+        <img src={headerImage} alt="banner image" />
       </div>
       
     </div>
@@ -47,7 +48,8 @@ export const About = () => {
       <div className="feature-desc flex">
         
         <h3>Empowerment Through Education</h3>
-        <p className="para1">Education is a powerful tool for empowerment. We strive to empower underprivileged students by providing scholarships and educational resources, enabling them to break free from the cycle of poverty and achieve their dreams.</p>
+        <p className="para1">Education is a powerful tool for empowerment. We strive to empower underprivileged students by providing scholarships and educational resources, enabling them to break free from the cycle of poverty and achieve their dreams. The Wonder Beats Foundation is dedicated to improving the lives of the most vulnerable members of our society. By empowering underprivileged students and unemployed youths, the foundation is making a positive impact on communities across the country, and helping to build a brighter, more equitable future for all.
+</p>
       </div>
 
 
@@ -61,7 +63,7 @@ export const About = () => {
       <div className="feature-desc flex">
       
         <h3>Building a Brighter Future</h3>
-        <p className="para1">We are committed to building a brighter and more equitable future for all members of society. Through mentorship and skill development programs, we equip unemployed youths with the necessary tools to secure meaningful employment and contribute to society.
+        <p className="para1">In addition to supporting education, The Wonder Beats Foundation also works to address the issue of unemployment among youths. The organization provides training and skill development programs that equip young people with the skills they need to succeed in today&apos;s competitive job market. By promoting entrepreneurship and self-reliance, the foundation is committed to reducing the unemployment rate and creating a better future for all..
 
 </p>
       </div>

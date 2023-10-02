@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "../css/Navbar.css";
+import WBlogo from "../images/WBlogo.png";
+
+
 
 function NavBar() {
   const [click, setClick] = useState(false);
@@ -11,7 +14,7 @@ function NavBar() {
       <nav className="navbar">
         <div className="nav-container">
           <NavLink exact to="/" className="nav-logo">
-            TheWonderBeats
+            <img src={WBlogo} alt="logo" className="logo"/>
             {/* <i className="fas fa-code"></i> */}
           </NavLink>
 

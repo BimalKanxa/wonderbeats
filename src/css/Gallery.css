@@ -2,3 +2,14 @@
     margin: 4% 6%;
     text-align: center;
 }
+.eventCard{
+    width: 30%;
+    background-color: #b3bdc4 ;
+}
+
+@media screen and (max-width:479px) {
+    .eventCard{
+            width: 45%;
+    }
+}
+

@@ -3,6 +3,8 @@ import Card from 'react-bootstrap/Card';
 import { seminars } from '../javascript/CardData';
 import styled from "styled-components"
 import '../css/Gallery.css'
+import Footer from './Footer';
+
 
 const Container = styled.div`
 margin-top: 4%;
@@ -17,6 +19,7 @@ margin-top: 4%;
     gap: 1rem;
     background-color: #f5fbfd;
     position: relative;
+    /* position: absolute; */
 `
 
 
@@ -28,13 +31,15 @@ const Gallery = ()=> {
     </div>
     <Container>
       {seminars.map((seminar) => (
-        <Card key={seminar.id} style={{ width: '25%', background: 'orange' }}>
+        <Card key={seminar.id} className='eventCard'>
           <Card.Img variant="top" src={seminar.img} />
           <Card.Body>
             <Card.Title>{seminar.college}</Card.Title>
           </Card.Body>
         </Card>
       ))}
+   
+    <Footer/>
     </Container>
     </>
   );

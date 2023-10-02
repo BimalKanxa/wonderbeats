@@ -40,6 +40,8 @@
     }
 
     .header-section1 {
+        display: flex;
+
         gap: 50px;
         justify-content: center;
     }
@@ -78,4 +80,14 @@
 
     .hero-para{
         margin-bottom: 2rem;
+    }
+
+    @media screen and (max-width: 479px) {
+        .header-section1{
+            flex-direction: column-reverse;
+        }
+        .header-left1 {
+            max-width: 80vw;
+            
+        }
     }

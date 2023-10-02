@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto&display=swap');
 
 .navbar {
-  background-color: #FAFAFA;
+  /* background-color: #FAFAFA; */
+  background-color: #ffffe0;
   /* background-color: rgb(176,174,177); */
   height: 90px;
   display: flex;
@@ -25,12 +26,16 @@
 .nav-logo {
   color: black;
   align-items: center;
-  margin-left: 20px;
+  margin-left: 10%;
   cursor: pointer;
   text-decoration: none;
   font-size: 1.5rem;
   font-family: Poppins, sans-serif;
   flex-grow: 1;
+
+}
+.logo{
+  height: 100px;
 }
 
 .nav-menu {

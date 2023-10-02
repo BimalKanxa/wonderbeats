@@ -13,13 +13,13 @@ const Contact = () => {
         <div className="address details">
           <i className="fas fa-map-marker-alt"></i>
           <div className="topic">Address</div>
-          <div className="text-one">Delhi, India</div>
+          <div className="text-one">House No:62, First Floor, Left side, ward no: 4, Mehrauli Near upper Jatawara Mehrauli, Mehrauli, SOUTH WEST DELHI, Delhi, INDIA <br /> PIN : 110030</div>
           {/* <div className="text-two">Gs Road Khanapara</div> */}
         </div>
         <div className="phone details">
           <i className="fas fa-phone-alt"></i>
           <div className="topic">Phone</div>
-          <div className="text-one">+91 9774168925</div>
+          <div className="text-one">+91 9774168925</div> 
           <div className="text-two">+91 9362908260</div>
         </div>
         <div className="email details">

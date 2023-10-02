@@ -152,3 +152,42 @@ header-section {
     margin-top: -4%;
     margin-bottom: 10%;
 }
+
+
+
+@media screen and (max-width: 767px){
+   
+    .header-section{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .header-right{
+        display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .header-left{
+        max-width: 90%;
+        padding: 1rem;
+    }
+    .about_para{
+        margin-bottom: 10%;
+    }
+    .container{
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+    .big-feature-container{
+        flex-direction: column;
+    }
+    
+}
+@media screen and(max-width: 479px) {
+    :root{
+        --padding-inline-section: 10px;
+    }  
+}
