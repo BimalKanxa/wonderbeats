@@ -14,12 +14,12 @@ const ImageSlider = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
   };
-  const cardStyle = {
-    marginTop: '6%',
-    width: '70%', // Set the desired width of the card
-    margin: '0 auto', // Center the card horizontally
+  // const cardStyle = {
+  //   marginTop: '6%',
+  //   width: '70%', // Set the desired width of the card
+  //   margin: '0 auto', // Center the card horizontally
    
-  };
+  // };
 
   const imageStyle = {
     maxHeight: '300px', // Set the maximum height for the images
@@ -30,7 +30,7 @@ const ImageSlider = () => {
     <Container style={{width: "100%"}}>
       <Slider {...sliderSettings}>
         <div className='sliderContainer'>
-          <Card className='card' style={cardStyle}>
+          <Card className='card'  >
             <Card.Img className='cardImage' style={imageStyle} src="https://images.unsplash.com/photo-1554224155-380177dc24a5?ixid=M3wzOTE5Mjl8MHwxfHNlYXJjaHwxfHxvcHBvcnR1bml0aWVzJTJDJTIwZW1wb3dlcnxlbnwwfHx8fDE2OTA1NjI0MTl8MA&ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=370" alt="Image 1" />
             <Card.Body>
               <Card.Title className='cardTitle'>Empowering Lives Through Education and Employment</Card.Title>
@@ -41,7 +41,8 @@ const ImageSlider = () => {
           </Card>
         </div>
         <div>
-          <Card style={cardStyle}>
+        {/* //style={cardStyle} */}
+          <Card >  
             <Card.Img style={imageStyle} src="https://images.unsplash.com/photo-1648912795679-a4d06075c860?ixid=M3wzOTE5Mjl8MHwxfHNlYXJjaHwxfHxvcHBvcnR1bml0aWVzJTJDJTIwcHJvZ3JhbXN8ZW58MHx8fHwxNjkwNTYyNDE5fDA&ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=370" alt="Image 2" />
             <Card.Body>
               <Card.Title>Our Programs</Card.Title>
@@ -53,7 +54,7 @@ const ImageSlider = () => {
         </div>
 
         <div>
-          <Card style={cardStyle}>
+          <Card >
             <Card.Img style={imageStyle} src="https://images.unsplash.com/photo-1494386346843-e12284507169?ixid=M3wzOTE5Mjl8MHwxfHNlYXJjaHw2fHxvcHBvcnR1bml0aWVzfGVufDB8fHx8MTY5MDU2MjQxOXww&ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=370" alt="Image 3" />
             <Card.Body>
               <Card.Title>Join Our Community</Card.Title>

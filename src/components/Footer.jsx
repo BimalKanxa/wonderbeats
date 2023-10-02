@@ -10,7 +10,7 @@ const Footer = () => {
       <a href="#" className="hover-links"><i className="fa-brands fa-instagram"></i></a>
       <a href="#" className="hover-links"><i className="fa-brands fa-linkedin"></i></a>
       <a href="#" className="hover-links"><i className="fa-brands fa-x-twitter"></i></a>
-<span>copyright &copy; 2023</span>
+<span>copyright &copy; 2023</span> <br /> <span>REGISTERED UNDER THE INDIAN TRUST REGISTRATION ACT, 1882</span>
     </div>
   </section>
     </div>
