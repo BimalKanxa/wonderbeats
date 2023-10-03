@@ -48,7 +48,7 @@ body {
     width: 90%;
 }
 
-.container {
+.containerAbout {
     /* max-width: 100%; */
     max-width: 100%;
     margin-inline: auto;
@@ -152,7 +152,12 @@ header-section {
     margin-top: -4%;
     margin-bottom: 10%;
 }
-
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 
 
 @media screen and (max-width: 767px){
@@ -160,7 +165,7 @@ header-section {
     .header-section{
         display: flex;
         flex-direction: column-reverse;
-        width: 100%;
+        width: 100vw;
     }
     .header-right{
         display: flex;
@@ -176,7 +181,7 @@ header-section {
     .about_para{
         margin-bottom: 10%;
     }
-    .container{
+    .containerAbout{
         height: 100%;
         width: 100%;
         margin: 0;
@@ -190,4 +195,19 @@ header-section {
     :root{
         --padding-inline-section: 10px;
     }  
+    .custom-feature{
+        margin-bottom: 2%;
+    }
+    .big-feature-section{
+        padding: 0px;
+    }
+    .containerAbout{
+        width: 100%;
+    }
+    .about_para{
+        width: 100%;
+    }
+    .header-section{
+        width: 100%;
+    }
 }

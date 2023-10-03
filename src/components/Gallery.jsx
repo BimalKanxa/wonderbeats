@@ -34,7 +34,7 @@ const Gallery = ()=> {
         <Card key={seminar.id} className='eventCard'>
           <Card.Img variant="top" src={seminar.img} />
           <Card.Body>
-            <Card.Title>{seminar.college}</Card.Title>
+            <Card.Title className='cardTitle'>{seminar.college}</Card.Title>
           </Card.Body>
         </Card>
       ))}

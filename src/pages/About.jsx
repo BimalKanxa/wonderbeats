@@ -8,9 +8,12 @@ export const About = () => {
     <>
     
     <header>
-    <div className="container header-section flex">
+      <div className="header">
+          <h1>About The Wonder Beats Foundation</h1>
+      </div>
+    <div className="containerAbout header-section flex">
       <div className="header-left">
-        <h1>About The Wonder Beats Foundation</h1>
+        {/* <h1>About The Wonder Beats Foundation</h1> */}
         <p className='about_para'>The Wonder Beats Foundation is a non-governmental organization committed to improving the lives of underprivileged students and unemployed youths. Founded on the principle of providing equal opportunities to all, the foundation focuses on creating sustainable programs that empower individuals to reach their full potential. <br /><br /> At the heart of the organization&apos;s mission is the belief that education is a key tool for breaking the cycle of poverty. The Wonder Beats Foundation works to provide access to quality education for disadvantaged students, regardless of their socioeconomic status. Through scholarships, mentorship, and educational programs, the foundation aims to create a level playing field for all students, irrespective of their background.</p>
         <a href="#" className="primary-button get-started-btn">Contact Us</a>
       </div>
