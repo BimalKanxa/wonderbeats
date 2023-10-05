@@ -16,6 +16,7 @@
   
   .card-title {
     font-size: 24px;
+    color: black;
   }
   
   .card-text {
@@ -37,6 +38,7 @@
         
         .card-title {
           font-size: 20px; /* Adjust font size for smaller screens */
+          color: black;
         }
       
         .card-text {

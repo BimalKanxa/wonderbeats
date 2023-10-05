@@ -33,7 +33,8 @@ const ImageSlider = () => {
           <Card className='card'  >
             <Card.Img className='cardImage' style={imageStyle} src="https://images.unsplash.com/photo-1554224155-380177dc24a5?ixid=M3wzOTE5Mjl8MHwxfHNlYXJjaHwxfHxvcHBvcnR1bml0aWVzJTJDJTIwZW1wb3dlcnxlbnwwfHx8fDE2OTA1NjI0MTl8MA&ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=370" alt="Image 1" />
             <Card.Body>
-              <Card.Title className='cardTitle'>Empowering Lives Through Education and Employment</Card.Title>
+            {/* className='cardTitle'  removed from below card.text*/} 
+              <Card.Title>Empowering Lives Through Education and Employment</Card.Title>
               <Card.Text className='cardText'>
                 Discover how The Wonder Beats Foundation is making a difference in the lives of underprivileged students and unemployed youths. Through scholarships, mentorship, and skill development programs, we empower individuals to break free from poverty&apos;s cycle and reach their full potential.
               </Card.Text>
