@@ -1,29 +1,16 @@
 
-import { useRef } from 'react'
+
 import '../css/Hero.css'
-import {motion, useInView, useAnimation} from 'framer-motion'
+
 
 const Hero = () => {
-  const ref = useRef(null)
-  const isInview = useInView(ref, {once: true})
 
   return (
     <>
-    <div ref = {ref} style={{
-      position: "relative",
-      overflow:"hidden"
-    }}>
+    <div >
 
 
-    <motion.div
-      variants={{
-        hidden: {opacity:0, y : 75},
-        visible: {opacity: 1, y:0},
-      }}
-      initial="hidden"
-      animated="visible"
-      transition={{duration: 0.5, delay:0.25}}
-    >
+    <div>
          <header>
     <div className="container1 header-section1 flex1">
       <div className="header-left1">
@@ -38,7 +25,7 @@ const Hero = () => {
     </div>
   </header>
 
-    </motion.div>
+    </div>
     </div>
     </>
   )

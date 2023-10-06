@@ -3,7 +3,8 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { Card, Container } from 'react-bootstrap';
-
+import { useState, useEffect } from 'react';
+import { useSpring, animated } from 'react-spring';
 
 
 const ImageSlider = () => {
@@ -26,8 +27,41 @@ const ImageSlider = () => {
     width: '100%', // Ensure the image resizes within the card
   };
 
+  const [inView, setInView] = useState(false);
+
+  // Use React Spring to animate the appearance of the component
+  const slideIn = useSpring({
+    opacity: inView ? 1 : 0,
+    transform: inView ? 'translateX(0)' : 'translateX(-100px)',
+    config:{
+      duration:1000,
+    }
+  });
+
+    // Function to check if the component is in view
+    const checkInView = () => {
+      const element = document.getElementById('imageSlider'); // Replace 'imageSlider' with the actual ID or class of your target element
+      if (!element) return;
+  
+      const rect = element.getBoundingClientRect();
+      const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+  
+      setInView(rect.top <= windowHeight);
+    };
+  
+    // Use useEffect to listen for scroll events and check if the component is in view
+    useEffect(() => {
+      window.addEventListener('scroll', checkInView);
+      checkInView(); // Check initially when the component mounts
+      return () => {
+        window.removeEventListener('scroll', checkInView);
+      };
+    }, []);
+  
+
   return (
     <Container style={{width: "100%"}}>
+      <animated.div id="imageSlider" style={{...slideIn}}>
       <Slider {...sliderSettings}>
         <div className='sliderContainer'>
           <Card className='card'  >
@@ -67,6 +101,7 @@ const ImageSlider = () => {
         </div>
         {/* Add more slides as needed */}
       </Slider>
+      </animated.div>
     </Container>
   );
 };
