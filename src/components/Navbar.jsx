@@ -8,17 +8,18 @@ import WBlogo from "../images/WBlogo.png";
 function NavBar() {
   const [click, setClick] = useState(false);
 
-  const [modeChange, setModeChange] = useState(true);
-  const handleModeClick = () =>{
-      if(modeChange){
-          document.getElementById("navbar").style.backgroundColor = "#ffffe0";
-          setModeChange(false);
-      }
-      else{
-        document.getElementById("navbar").style.backgroundColor = "#e4e4e4";
-        setModeChange(true)
-      }
-  }
+           //for light and dark mode
+  // const [modeChange, setModeChange] = useState(true);
+  // const handleModeClick = () =>{
+  //     if(modeChange){
+  //         document.getElementById("navbar").style.backgroundColor = "#ffffe0";
+  //         setModeChange(false);
+  //     }
+  //     else{
+  //       document.getElementById("navbar").style.backgroundColor = "#e4e4e4";
+  //       setModeChange(true)
+  //     }
+  // }
 
   const handleClick = () => setClick(!click);
 
@@ -33,7 +34,7 @@ function NavBar() {
 
           <ul className={click ? "nav-menu active" : "nav-menu"}>
          
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <NavLink
                 exact
                 activeClassName="active"
@@ -42,7 +43,8 @@ function NavBar() {
               >
                  <ion-icon name="contrast-outline"></ion-icon>  
               </NavLink>
-            </li>
+            </li> */}
+            
             <li className="nav-item">
               <NavLink
                 exact

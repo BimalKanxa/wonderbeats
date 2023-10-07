@@ -6,25 +6,8 @@
     --accent-color: #2294ed;
     --accent-color-dark: #1d69a3;
     --padding-inline-section: 20px;
-        --heading: rgb(0 10 45);
-        --para: #777;
-        --para-tint: #e4e4e4;
-        --white: #fff;
-        --black: #212529;
-        --helper: #8490ff;
-        --overlay: #3e64ff;
-        --helper-tint: #f3f4ff;
-        --bg: rgb(249 249 255);
-        --icons-bg: rgba(144, 172, 209, 0.2);
-        --gradient: linear-gradient(0deg, rgb(132 144 255) 0%, rgb(98 189 252) 100%);
-        --gradientSupport: -webkit-linear-gradient(
-          0deg,
-          rgb(132 144 255) 0%,
-          rgb(98 189 252) 100%
-        );
-        --shadow: 0px 0px 20px 0px rgb(132 144 255 / 20%);
-        --shadowSupport: 0px 20px 20px 0px rgb(132 144 255 / 30%);
-      }
+     
+}
 
 .container2 {
     max-width: 100%;
@@ -51,7 +34,7 @@
     overflow-x: hidden;
     margin-top: 3%;
     /* background-color: #183b56; */
-    background: url("../../public/ctabg.jpg");
+    background: url("./ctabg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 120px var(--padding-inline-section) 80px;
