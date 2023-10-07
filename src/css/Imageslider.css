@@ -5,7 +5,8 @@
     /* width: 100%; */
     margin: 0 auto;
     box-shadow: none !important;
-    marginTop: 6%;
+    margin-top: 6%;
+    overflow-x: hidden;
     }
   
   

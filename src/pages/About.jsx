@@ -28,12 +28,12 @@ export const About = () => {
 
   <section className="big-feature-section">
     <h2 className="features-header" style={{color: "#06a3da", borderBottom: "2px solid #06a3da", width: "100%",marginTop: "5%" }}>Our Principles</h2>
-    <div className="container flex big-feature-container">
+    <div className="container flex big-feature-container" data-aos="fade-right">
 
-      <div className="feature-img imgwidth">
+      <div className="feature-img imgwidth" >
         <img src="https://imgs.search.brave.com/BB0Gxj9OMJJwCuCiIu7LQak5p9_oXL4WVrNoTYEEc5g/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTI4/MjY2MTIxNC9waG90/by9lcXVhbC1vcHBv/cnR1bml0eS1tZW1v/LWFuZC1maWd1cmVz/LW9uLXRoZS1wYWdl/cy5qcGc_cz02MTJ4/NjEyJnc9MCZrPTIw/JmM9Qm85X3JhUVVy/OWVFUmFUSllickpk/clVYLUZKcDBVWHpT/NjN5QS1tS2RwST0" alt="image" />
       </div>
-      <div className="feature-desc flex">
+      <div className="feature-desc flex" >
        
         <h3>Equal Opportunities</h3>
         <p className="para1">
@@ -44,7 +44,7 @@ export const About = () => {
     </div>
   </section>
   <section className="big-feature-section">
-    <div className="container flex big-feature-container second-feature">
+    <div className="container flex big-feature-container second-feature" data-aos="fade-left">
       <div className="feature-img imgwidth">
         <img src="https://imgs.search.brave.com/dmIIJKniibFDMR0dPJrj9jF3ijkqmwu5osjPAdeD9EY/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tY2hl/bnJ5LmFjYWRlbWlj/d29ya3MuY29tL2lt/YWdlX3VwbG9hZHMv/VzFzaVppSXNJbWx0/WVdkbFgzVndiRzlo/WkhNdk15OHlZemcx/TW1abE9DMHhOMlpo/TFRRNE5HTXRZV1pr/WlMwNE1XWmxZV0U1/TURFMU5EZ3ZSVEpG/SUV4dloyOHVhbkJu/SWwxZD9zaGE9OTQz/YmY2N2E5MDlkMDAy/Yg" alt="image" />
       </div>
@@ -59,7 +59,7 @@ export const About = () => {
     </div>
   </section>
   <section className="big-feature-section custom-feature">
-    <div className="container flex big-feature-container">
+    <div className="container flex big-feature-container" data-aos="fade-right">
       <div className="feature-img imgwidth">
         <img src="https://imgs.search.brave.com/0ka8B76AC2wkaaw8ok8e_5oYCU92KR-1UG1w7D7HTVo/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/cGhpcHBzbnkub3Jn/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDE2/LzExL1BISVBQUy1E/RVNJR04tRklOQUwt/UkdCLTEwMjR4OTk2/LmpwZw" alt="image" />
       </div>

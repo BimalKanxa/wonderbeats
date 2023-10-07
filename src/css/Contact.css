@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto&display=swap");
 /* Style for the popup background */
+
+
 .popup-bg {
+  overflow-x: hidden;
     display: none;
     position: fixed;
     top: 0;
@@ -37,6 +40,7 @@
     background: white;
     border: 1px solid #ccc;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    overflow-x: hidden;
   }
   
   .form-container label {

@@ -6,6 +6,7 @@
     width: 100%;
     height: auto;
     text-align: center;
+    overflow-x: hidden;
 }
 .client-wrap h1{
     font-size: 3rem;
@@ -51,4 +52,9 @@
     height: 100%;
 } */
 
+@media screen and (max-width: 479px) {
+    .client-wrap h1{
+        font-size: 2rem;
+    }
+}
 

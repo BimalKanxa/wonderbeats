@@ -53,13 +53,16 @@
     }
 
 .subfooter{
-    /* background-color: #b9cde4; */
-    /* background-color: #c7a8a8; */
-    background-color: #ffffe0;
+    
+    /* background-color: #ffffe0; */
+    background: url("../../public/footerbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     /* width: 100%; */
     width: 100vw;
     
     padding: var(--padding-inline-section);
+    overflow-x: hidden;
 }
 .subfooter-container{
     justify-content: center;

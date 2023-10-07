@@ -48,8 +48,12 @@
 }
 
 .cta-section{
+    overflow-x: hidden;
     margin-top: 3%;
-    background-color: #183b56;
+    /* background-color: #183b56; */
+    background: url("../../public/ctabg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 120px var(--padding-inline-section) 80px;
 }
 .cta-section-container p{
@@ -64,6 +68,6 @@
 
 @media screen and (max-width: 479px) {
     .heading2{
-        font-size: 3rem;
+        font-size: 2rem;
     }
 }

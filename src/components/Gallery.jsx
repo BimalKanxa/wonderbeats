@@ -31,7 +31,7 @@ const Gallery = ()=> {
     </div>
     <Container>
       {seminars.map((seminar) => (
-        <Card key={seminar.id} className='eventCard'>
+        <Card key={seminar.id} className='eventCard' data-aos="zoom-in" data-aos-offset="10">
           <Card.Img variant="top" src={seminar.img} />
           <Card.Body>
             <Card.Title className='cardTitle'>{seminar.college}</Card.Title>

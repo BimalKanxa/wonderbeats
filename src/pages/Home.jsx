@@ -17,8 +17,10 @@ const Home = () => {
   useEffect(()=>{ 
     setTimeout(() =>{
       setLoading(false);
-    },2000)
+    },1500)
+    
   },[])
+  clearTimeout();
 
   return (
     <>

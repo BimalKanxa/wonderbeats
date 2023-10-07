@@ -8,10 +8,23 @@ import WBlogo from "../images/WBlogo.png";
 function NavBar() {
   const [click, setClick] = useState(false);
 
+  const [modeChange, setModeChange] = useState(true);
+  const handleModeClick = () =>{
+      if(modeChange){
+          document.getElementById("navbar").style.backgroundColor = "#ffffe0";
+          setModeChange(false);
+      }
+      else{
+        document.getElementById("navbar").style.backgroundColor = "#e4e4e4";
+        setModeChange(true)
+      }
+  }
+
   const handleClick = () => setClick(!click);
+
   return (
     <>
-      <nav className="navbar">
+      <nav className="navbar" id="navbar">
         <div className="nav-container">
           <NavLink exact to="/" className="nav-logo">
             <img src={WBlogo} alt="logo" className="logo"/>
@@ -19,6 +32,17 @@ function NavBar() {
           </NavLink>
 
           <ul className={click ? "nav-menu active" : "nav-menu"}>
+         
+            <li className="nav-item">
+              <NavLink
+                exact
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleModeClick}
+              >
+                 <ion-icon name="contrast-outline"></ion-icon>  
+              </NavLink>
+            </li>
             <li className="nav-item">
               <NavLink
                 exact
