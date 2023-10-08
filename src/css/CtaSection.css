@@ -6,7 +6,20 @@
     --accent-color: #2294ed;
     --accent-color-dark: #1d69a3;
     --padding-inline-section: 20px;
+    --purple: #c306e9;
+    --pink: #d41189;
+    --violet: #a912ea;
+    --green: #54cd20;
      
+}
+
+@keyframes background-pan {
+    from{
+        background-position: 0% center;
+    }
+    to{
+        background-position: -100% center;
+    }
 }
 
 .container2 {
@@ -46,7 +59,21 @@
 }
 
 .heading2{
-    font-size: 4rem;
+    animation: background-pan 3s linear infinite;
+    font-size: 3rem;
+    background: linear-gradient(
+        to right, 
+        var(--purple),
+        var(--green),
+        var(--pink),
+        var(--violet)
+    );
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* white-space: nowrap; */
+
 }
 
 @media screen and (max-width: 479px) {

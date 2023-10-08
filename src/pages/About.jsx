@@ -31,7 +31,7 @@ export const About = () => {
     <div className="container flex big-feature-container" data-aos="fade-right">
 
       <div className="feature-img imgwidth" >
-        <img src="https://imgs.search.brave.com/BB0Gxj9OMJJwCuCiIu7LQak5p9_oXL4WVrNoTYEEc5g/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTI4/MjY2MTIxNC9waG90/by9lcXVhbC1vcHBv/cnR1bml0eS1tZW1v/LWFuZC1maWd1cmVz/LW9uLXRoZS1wYWdl/cy5qcGc_cz02MTJ4/NjEyJnc9MCZrPTIw/JmM9Qm85X3JhUVVy/OWVFUmFUSllickpk/clVYLUZKcDBVWHpT/NjN5QS1tS2RwST0" alt="image" />
+        <img src="./equaloppor.png" alt="image" />
       </div>
       <div className="feature-desc flex" >
        
