@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
 .navbar {
   /* background-color: #FAFAFA; */
   background-color: #ffffe0;
@@ -39,7 +39,8 @@
 }
 
 .nav-menu {
-  font-family: Poppins, sans-serif;
+  /* font-family: Poppins, sans-serif; */
+  font-family: 'Young Serif', serif;
   display: flex;
   list-style: none;
   text-align: center;
@@ -52,7 +53,7 @@
   padding: 0.5rem 1rem;
   height: 100%;
   border-bottom: 3px solid transparent;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
 }
 
 .nav-contact{
@@ -67,6 +68,17 @@
   line-height: 40px;
   margin-right: 1rem;
 }
+
+.homeLink{
+  background-color: #19ca48;
+  border-radius:13px;
+}
+
+.homeLink:first-child:hover{
+  color: white;
+}
+
+
 
 /* .nav-item:after {
   content: "";
@@ -87,10 +99,11 @@
 }
 
 
-.nav-item:hover:after {
+.nav-item:not(:first-child):hover::after {
   width: 100%;
   background: #ffdd40;
 }
+
 
 .nav-item .active {
   color: black;

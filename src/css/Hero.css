@@ -38,7 +38,11 @@
         display: flex;
         align-items: center;
     }
-
+#hero{
+    background: url("https://img.freepik.com/free-vector/modern-three-dimensional-spheres-background_79603-1448.jpg?w=740&t=st=1696895959~exp=1696896559~hmac=d6c949419d0d31c0d612045c2cd81472971469c185c4c288517a790ab9f8d701"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
     .header-section1 {
         display: flex;
         overflow-x: hidden;

@@ -50,7 +50,7 @@ function NavBar() {
                 exact
                 to="/"
                 activeClassName="active"
-                className="nav-links"
+                className="nav-links homeLink"
                 onClick={handleClick}
               >
                 Home

@@ -7,14 +7,14 @@ const Hero = () => {
 
   return (
     <>
-    <div >
+    <div id='hero'>
 
 
     <div>
          <header>
-    <div className="container1 header-section1 flex1">
+    <div className="container1 header-section1 flex1" >
       <div className="header-left1">
-        <h1>Empowering Lives Through Education and Opportunity.</h1>
+        <h1>Let&apos;s Build The Better World Together.</h1>
         <h4>Breaking Barriers, Building Futures</h4><br />
         <p className='hero-para'>The Wonder Beats Foundation is a non-profit organization committed to empowering individuals to break free from poverty&apos;s cycle and reach their full potential. Through scholarships, mentorship, and skill development programs, we strive to create a level playing field in education and employment.</p>
         <a href="/about" className="primary-button1 get-started-btn1">Learn More!</a>
