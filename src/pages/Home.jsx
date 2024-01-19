@@ -8,39 +8,39 @@ import Collaboration from '../components/Collaboration'
 import { useState, useEffect } from 'react';
 import Loader from '../components/Loader'
 
-
-
-
-
 const Home = () => {
-  const [loading, setLoading] = useState(true)
-  useEffect(()=>{ 
-    setTimeout(() =>{
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Check if the user has visited the home page before
+    const hasVisitedBefore = localStorage.getItem('hasVisitedHome');
+
+    if (hasVisitedBefore) {
+      // If visited before, set loading to false immediately
       setLoading(false);
-    },1500)
-    
-  },[])
-  clearTimeout();
+    } else {
+      // If first visit, set loading to true for 1000 milliseconds and mark as visited
+      setTimeout(() => {
+        setLoading(false);
+        localStorage.setItem('hasVisitedHome', 'true');
+      }, 1000);
+    }
+  }, []);
 
   return (
     <>
-    { loading ? ( <Loader /> ) : (
-      <>
- <Hero/>
- <ImageSlider/>
- <Collaboration/>
-<CtaSection/>
-    <Contact/>
-<Footer/>
-</>
-    )
-}
-
-
-
-    {/* <Footer/> */}
+      {loading ? <Loader /> : (
+        <>
+          <Hero />
+          <ImageSlider />
+          <Collaboration />
+          <CtaSection />
+          <Contact />
+          <Footer />
+        </>
+      )}
     </>
-  )
+  );
 }
 
-export default Home
+export default Home;

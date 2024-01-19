@@ -47,6 +47,11 @@
       id: 9,
       img: './event3 (6).jpg',
       college: "With the organising committee of the Job fair organised by the Don Bosco Technical School at Shillong on 10th August, 2023."
-    }
+    },
+    {
+      id:10,
+      img:'/pragjyotishCollege.jpg',
+      college: "Signing the MoU with Pragjyotish College, Guwahati."
+    }    
    
   ]

@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+
 .navbar {
   /* background-color: #FAFAFA; */
   background-color: #ffffe0;
@@ -44,13 +46,13 @@
   display: flex;
   list-style: none;
   text-align: center;
-  margin-right: 2rem;
+  margin-right: 3rem;
 }
 
 .nav-links {
   color: #183b56;
   text-decoration: none;
-  padding: 0.5rem 1rem;
+  padding: 0.3rem 0.7rem;
   height: 100%;
   border-bottom: 3px solid transparent;
   font-size: 1.2rem;
@@ -59,6 +61,7 @@
 .nav-contact{
   font-size: 1.2rem;
   border: 1px solid #ffdd40;
+  border-radius: 10px;
 }
 .fa-code {
   margin-left: 1rem;
@@ -69,13 +72,18 @@
   margin-right: 1rem;
 }
 
-.homeLink{
+/* .homeLink{
   background-color: #19ca48;
   border-radius:13px;
-}
+} */
 
-.homeLink:first-child:hover{
+/* .homeLink:first-child:hover{
   color: white;
+} */
+
+
+.contact-link:hover{
+  background-color: #f59e0b;
 }
 
 
@@ -99,7 +107,11 @@
 }
 
 
-.nav-item:not(:first-child):hover::after {
+/* .nav-item:not(:first-child):hover::after {
+  width: 100%;
+  background: #ffdd40;
+} */
+.nav-item:hover::after {
   width: 100%;
   background: #ffdd40;
 }

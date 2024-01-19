@@ -50,7 +50,7 @@ function NavBar() {
                 exact
                 to="/"
                 activeClassName="active"
-                className="nav-links homeLink"
+                className="nav-links homeLink" 
                 onClick={handleClick}
               >
                 Home
@@ -83,7 +83,7 @@ function NavBar() {
                 exact
                 to="/contact"
                 activeClassName="active"
-                className="nav-links nav-contact"
+                className="nav-links nav-contact contact-link"
                 onClick={handleClick}
               >
                 Contact Us
