@@ -45,11 +45,10 @@ const Collaboration = () => {
         <hr />
         <div className="client-in">
             <ul>
+               
+                
                 <li>
-                    <img src="./cottonlogo.png" alt="collaboration" />
-                </li>
-                <li>
-                    <img src="./employmentexpress.png" alt="colab" />
+                    <img src="/logo.png" alt="colab" />
                 </li>
                     <li>
                     <img src="./ncscmeghalaya.png" alt="colab" />
@@ -60,9 +59,17 @@ const Collaboration = () => {
                 <li>
                     <img src="./ncscmanipur.png" alt="colab" />
                 </li>
-                     <li>
+
+                <li>
                     <img src="./employmentprovider.png" alt="colab" />
                 </li>
+                <li>
+                    <img src="./cottonlogo.png" alt="collaboration" />
+                </li>
+                <li>
+                    <img  src="/handiqueLogo.png" alt="colab" />
+                </li>               
+
             </ul>
         </div>
         </animated.div>
