@@ -53,6 +53,9 @@ const Collaboration = () => {
                     <li>
                     <img src="./ncscmeghalaya.png" alt="colab" />
                 </li>
+                 <li>
+                    <img src="/pragjyotishCollegelogo.jpg" alt="colab" />
+                </li>
                 <li>
                     <img src="./kcdaslogo.png" alt="colab" />
                 </li>
