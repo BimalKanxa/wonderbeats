@@ -46,7 +46,7 @@ export const About = () => {
   <section className="big-feature-section">
     <div className="container flex big-feature-container second-feature" data-aos="fade-left">
       <div className="feature-img imgwidth">
-        <img src="https://imgs.search.brave.com/dmIIJKniibFDMR0dPJrj9jF3ijkqmwu5osjPAdeD9EY/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tY2hl/bnJ5LmFjYWRlbWlj/d29ya3MuY29tL2lt/YWdlX3VwbG9hZHMv/VzFzaVppSXNJbWx0/WVdkbFgzVndiRzlo/WkhNdk15OHlZemcx/TW1abE9DMHhOMlpo/TFRRNE5HTXRZV1pr/WlMwNE1XWmxZV0U1/TURFMU5EZ3ZSVEpG/SUV4dloyOHVhbkJu/SWwxZD9zaGE9OTQz/YmY2N2E5MDlkMDAy/Yg" alt="image" />
+        <img src="/empowerment.png" alt="image" />
       </div>
       <div className="feature-desc flex">
         
