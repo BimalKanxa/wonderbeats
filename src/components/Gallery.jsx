@@ -1,54 +1,65 @@
-import PropTypes from 'prop-types'
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import Card from 'react-bootstrap/Card';
-import { seminars } from '../javascript/CardData';
-import styled from "styled-components"
-import '../css/Gallery.css'
+import { SERVER_URL } from '../server';
 import Footer from './Footer';
+import { FaCalendarAlt } from 'react-icons/fa';
 
+const Gallery = () => {
+  const [events, setEvents] = useState([]);
 
-const Container = styled.div`
-margin-top: 4%;
-    flex:1;
-    margin: 5px;
-    min-width: 280px;
-    height: 350px;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-    background-color: #f5fbfd;
-    position: relative;
-    /* position: absolute; */
-`
+  // Fetch events from the API using axios 
+  useEffect(() => {
+    axios
+      .get(`${SERVER_URL}/api/getEvents`) // Adjusted endpoint to match your backend
+      .then((response) => {
+        setEvents(response.data); // Assuming response.data contains the array of events
+      })
+      .catch((error) => {
+        console.error('Error fetching events:', error);
+      });
+  }, []);
 
-
-const Gallery = ()=> {
   return (
     <>
-    <div className="heading">
-    <h2>Our Events and Seminars</h2>
-    </div>
-    <Container>
-      {seminars.map((seminar) => (
-        <Card key={seminar.id} className='eventCard' data-aos="zoom-in" data-aos-offset="10">
-          <Card.Img variant="top" src={seminar.img} />
-          <Card.Body>
-            <Card.Title className='cardTitle'>{seminar.college}</Card.Title>
-          </Card.Body>
-        </Card>
-      ))}
-   
-    <Footer/>
-    </Container>
+      <div className="text-center my-8 mx-6">
+        <h2 className="text-2xl font-semibold">Our Events and Seminars</h2>
+      </div>
+
+      {/* Cards start here */}
+      <div className="flex flex-wrap gap-4 justify-center">
+        {events.map((event) => (
+          <div
+            key={event._id} // Unique key for each card
+            className="max-w-sm rounded overflow-hidden shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          >
+            <img
+              className="w-full h-48 object-cover"
+              src={event.imgUrl}
+              alt="event"
+            />
+            <div className="px-6 py-4">
+              <h2 className="font-bold text-xl mb-2 text-gray-800">{event.location}</h2>
+              <p className="text-gray-700 text-base">
+              {event.description.length > 100
+                  ? `${event.description.substring(0, 100)}...`
+                  : event.description}
+              </p>
+            </div>
+            <div className="px-6 pt-4 pb-2 flex items-center">
+              <FaCalendarAlt className="text-gray-500 mr-2" />
+              <span className="text-sm text-gray-600">{new Date(event.date).toLocaleDateString()}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+      {/* Cards end here */}
+      <div className='mt-5 relative'>
+
+      <Footer />
+      </div>
     </>
   );
-}
-
-Event.propTypes = {
-    item: PropTypes.object
-}
+};
 
 export default Gallery;
-
-         

@@ -5,6 +5,7 @@ import { About } from "./pages/About";
 import Contact  from "./components/Contact";
 import Navbar from './components/Navbar'
 import Gallery from './components/Gallery';
+import AddEventForm from './components/AddEventForm';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/gallery/create" element={<AddEventForm />} />
           </Routes>
         
       </Router>
