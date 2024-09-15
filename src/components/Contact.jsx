@@ -20,7 +20,7 @@ const Contact = () => {
           <i className="fas fa-phone-alt"></i>
           <div className="topic">Phone</div>
           <div className="text-one">+91 9774168925</div> 
-          <div className="text-two">+91 9362908260</div>
+          {/* <div className="text-two">+91 9362908260</div> */}
         </div>
         <div className="email details">
           <i className="fas fa-envelope"></i>

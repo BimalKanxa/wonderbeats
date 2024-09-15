@@ -25,9 +25,19 @@ const eventSchema = new mongoose.Schema({
   }
 });
 
+// Define the image-only schema
+const imageSchema = new mongoose.Schema({
+  imgUrl: {
+    type: String,
+    required: true, // Image URL is required
+  }
+});
+
 // Create the Event model
 const Event = mongoose.model('Event', eventSchema);
+const Image = mongoose.model('Image', imageSchema);
 
 // Export the model
-export default Event;
+// export default Event;
+export { Event, Image }
 

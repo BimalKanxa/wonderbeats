@@ -8,8 +8,8 @@ export const About = () => {
     <>
     
     <header>
-      <div className="header">
-          <h1>About The Wonder Beats Foundation</h1>
+      <div className="header text-2xl font-bold">
+          <h1>About The WonderBeats Foundation</h1>
       </div>
     <div className="containerAbout header-section flex">
       <div className="header-left">
@@ -29,7 +29,7 @@ Our initiatives focus on creating sustainable programs that empower individuals 
   
 
   <section className="big-feature-section">
-    <h2 className="features-header" style={{color: "#06a3da", borderBottom: "2px solid #06a3da", width: "100%",marginTop: "5%" }}>Our Principles</h2>
+    <h2 className="features-header text-2xl font-bold" style={{color: "#06a3da", borderBottom: "2px solid #06a3da", width: "100%",marginTop: "5%" }}>Our Principles</h2>
     <div className="container flex big-feature-container" data-aos="fade-right">
 
       <div className="feature-img imgwidth" >
@@ -37,7 +37,7 @@ Our initiatives focus on creating sustainable programs that empower individuals 
       </div>
       <div className="feature-desc flex" >
        
-        <h3>Educational Facilities and Programs</h3>
+        <h3 className='font-bold text-xl'>Educational Facilities and Programs</h3>
         <p className="para1">
         At the core of our mission is the commitment to provide quality education to young children in North East India. We establish modern educational facilities equipped with the latest learning resources and technology. Our programs are designed to offer comprehensive educational support, including mentorship, after-school tutoring, and extracurricular activities. By creating an inclusive learning environment, we aim to ensure that every child, regardless of their socioeconomic status, has access to quality education and the opportunity to succeed.</p>
       </div>
@@ -52,7 +52,7 @@ Our initiatives focus on creating sustainable programs that empower individuals 
       </div>
       <div className="feature-desc flex">
         
-        <h3>Employment Opportunities and Training</h3>
+        <h3 className='font-bold text-xl'>Employment Opportunities and Training</h3>
         <p className="para1">In our effort to combat unemployment among youths, The WonderBeats Foundation provides various training programs and resources. We focus on equipping young people with the necessary skills to thrive in today’s competitive job market. Our training includes career counseling, and workshops on resume writing, interview skills, and professional development. By promoting entrepreneurship and self-reliance, we encourage young individuals to explore new career paths and create their own opportunities.
 </p>
       </div>
@@ -67,7 +67,7 @@ Our initiatives focus on creating sustainable programs that empower individuals 
       </div>
       <div className="feature-desc flex">
       
-        <h3>Collaborations and Partnerships</h3>
+        <h3 className='font-bold text-xl'>Collaborations and Partnerships</h3>
         <p className="para1">The WonderBeats Foundation collaborates with numerous educational institutions, government and non-government organisations in North East India. These partnerships enable us to arrange placement opportunities for students with the help of two leading Placement partners from NE India, helping them transition from education to employment smoothly. We organize job fairs in collaboration with local colleges and universities, providing a platform for students to connect with potential employers. Additionally, our voluntary grooming sessions help students prepare for the professional world, enhancing their employability and confidence...
 
 </p>

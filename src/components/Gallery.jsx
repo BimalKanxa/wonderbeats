@@ -22,15 +22,15 @@ const Gallery = () => {
 
   return (
     <>
-      <div className="text-center my-8 mx-6">
+      <div className="text-center mt-8 mb-6 mx-6">
         <h2 className="text-2xl font-semibold">Our Events and Seminars</h2>
       </div>
 
       {/* Cards start here */}
-      <div className="flex flex-wrap gap-4 justify-center">
-        {events.map((event) => (
+      <div className="min-h-screen flex flex-wrap gap-4 justify-center">
+        {events.length<1?"Our Gallery will be updated soon!!":(events.map((event) => (
           <div
-            key={event._id} // Unique key for each card
+            key={event._id} 
             className="max-w-sm rounded overflow-hidden shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500"
           >
             <img
@@ -51,12 +51,12 @@ const Gallery = () => {
               <span className="text-sm text-gray-600">{new Date(event.date).toLocaleDateString()}</span>
             </div>
           </div>
-        ))}
+        )))}
       </div>
       {/* Cards end here */}
-      <div className='mt-5 relative'>
+      <div className='mt-5 relative '>
 
-      <Footer />
+      <Footer/>
       </div>
     </>
   );

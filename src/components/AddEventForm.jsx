@@ -7,9 +7,13 @@ import { SERVER_URL } from '../server';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios';
+import { useAuth } from '../context/AuthContext';
+import { useNavigate } from 'react-router-dom';
 
 
 const AddEventForm = () => {
+
+  const navigate = useNavigate()
   const [location, setLocation] = useState(''); 
   const [description, setDescription] = useState('');
   const [date, setDate] = useState(new Date());
@@ -25,6 +29,8 @@ const AddEventForm = () => {
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
+
+  const { logout } = useAuth();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -57,12 +63,18 @@ const AddEventForm = () => {
     }
   };
   
+  const handleLogOut = () => {
+      logout()
+      navigate("/")
+  }
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-400 to-purple-500 p-4">
       <form onSubmit={handleSubmit} className="bg-white rounded-lg shadow-xl p-8 w-full max-w-2xl space-y-6">
-        <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">Add New Event in Gallery</h2>
-
+        <div>
+        <span className="text-3xl font-bold text-center text-gray-800 mb-6">Add New Event in Gallery</span>
+    <button className='bg-blue-500 text-white rounded-md p-1 float-right' onClick={handleLogOut}>Logout</button>
+    </div>
         <div>
           <label htmlFor="location" className="block text-sm font-medium text-gray-700">Location</label>
           <input
