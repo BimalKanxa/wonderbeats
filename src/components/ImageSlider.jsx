@@ -65,7 +65,7 @@ const ImageSlider = () => {
       <Slider {...sliderSettings}>
         <div className='sliderContainer'>
           <Card className='card'  >
-            <Card.Img className='cardImage' style={imageStyle} src="https://images.unsplash.com/photo-1554224155-380177dc24a5?ixid=M3wzOTE5Mjl8MHwxfHNlYXJjaHwxfHxvcHBvcnR1bml0aWVzJTJDJTIwZW1wb3dlcnxlbnwwfHx8fDE2OTA1NjI0MTl8MA&ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=370" alt="Image 1" />
+            <Card.Img className='cardImage' style={imageStyle} src="/slider1Img.jpg" alt="Image 1" />
             <Card.Body>
             {/* className='cardTitle'  removed from below card.text*/} 
               <Card.Title>Empowering Lives Through Education and Employment</Card.Title>
@@ -78,7 +78,7 @@ const ImageSlider = () => {
         <div>
         {/* //style={cardStyle} */}
           <Card >  
-            <Card.Img style={imageStyle} src="https://images.unsplash.com/photo-1648912795679-a4d06075c860?ixid=M3wzOTE5Mjl8MHwxfHNlYXJjaHwxfHxvcHBvcnR1bml0aWVzJTJDJTIwcHJvZ3JhbXN8ZW58MHx8fHwxNjkwNTYyNDE5fDA&ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=370" alt="Image 2" />
+            <Card.Img style={imageStyle} src="/slider2Img.jpg" alt="Image 2" />
             <Card.Body>
               <Card.Title>Our Programs</Card.Title>
               <Card.Text>
@@ -90,7 +90,7 @@ const ImageSlider = () => {
 
         <div>
           <Card >
-            <Card.Img style={imageStyle} src="https://images.unsplash.com/photo-1494386346843-e12284507169?ixid=M3wzOTE5Mjl8MHwxfHNlYXJjaHw2fHxvcHBvcnR1bml0aWVzfGVufDB8fHx8MTY5MDU2MjQxOXww&ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=370" alt="Image 3" />
+            <Card.Img style={imageStyle} src="/slider3Img.png" alt="Image 3" />
             <Card.Body>
               <Card.Title>Join Our Community</Card.Title>
               <Card.Text>

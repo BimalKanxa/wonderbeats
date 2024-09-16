@@ -17,7 +17,7 @@
     "@mui/material": "^5.14.10",
     "aos": "^3.0.0-beta.6",
     "axios": "^1.7.7",
-    "framer-motion": "^10.16.4",
+    "framer-motion": "^10.18.0",
     "nodemon": "^3.0.1",
     "react": "^18.2.0",
     "react-bootstrap": "^2.8.0",

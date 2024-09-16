@@ -7,6 +7,7 @@ import Footer from '../components/Footer'
 import Collaboration from '../components/Collaboration'
 import { useState, useEffect } from 'react';
 import Loader from '../components/Loader'
+import ImpactArea from '../components/ImpactArea'
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
@@ -32,6 +33,7 @@ const Home = () => {
       {loading ? <Loader /> : (
         <>
           <Hero />
+          <ImpactArea/>
           <ImageSlider />
           <Collaboration />
           <CtaSection />
